@@ -20,12 +20,32 @@
 
     <!-- Menu -->
     <ul class="hide">
+<ul class="hide">
         {% assign name_page = "" %}
-        {% assign name_page = "" %}
-        {% assign pages = site.pages %}
+        
+        {% comment %} 1. Começamos apenas com as páginas do site {% endcomment %}
+        {% assign all_items = site.pages %}
+
+        {% comment %} 2. Só concatenamos se o arquivo de dados existir e for uma lista {% endcomment %}
         {% if site.data.menu %}
-            {% assign pages = pages | concat: site.data.menu %}
+            {% assign all_items = all_items | concat: site.data.menu %}
         {% endif %}
+
+        {% comment %} 3. Ordenamos o resultado final {% endcomment %}
+        {% assign sorted_pages = all_items | sort: 'position' %}
+
+        {% for page in sorted_pages %}
+            {% unless page.title == null or page.hide or name_page contains page.title %}
+                <li class="separator"> | </li>
+                <li>
+                    <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
+                        {% if page.icon %} <i class="navbar-icon fas {{ page.icon }}" aria-hidden="true"></i>{% endif %}
+                        <span class="navbar-label {% if page.icon %}navbar-label-with-icon{% endif%}">{{ page.title }}</span>
+                    </a>
+                </li>
+                {% assign name_page = name_page | append: page.title | append: "," %}
+            {% endunless %}
+        {% endfor %}
         {% assign pages = pages | sort: 'position' %}
         {% for page in pages %}
         {% unless page.title == null or page.hide or name_page contains page.title %}
