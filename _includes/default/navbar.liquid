@@ -21,9 +21,12 @@
     <!-- Menu -->
     <ul class="hide">
         {% assign name_page = "" %}
-        {% assign emptyArray = '' | split: '' %}
-        {% assign menus = site.data.menu | default: emptyArray %}
-        {% assign pages = site.pages | concat: menus | sort: 'position' %}
+        {% assign name_page = "" %}
+        {% assign pages = site.pages %}
+        {% if site.data.menu %}
+            {% assign pages = pages | concat: site.data.menu %}
+        {% endif %}
+        {% assign pages = pages | sort: 'position' %}
         {% for page in pages %}
         {% unless page.title == null or page.hide or name_page contains page.title %}
             <li class="separator"> | </li>
