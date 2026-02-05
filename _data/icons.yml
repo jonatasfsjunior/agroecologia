@@ -1,0 +1,37 @@
+# Para os ícones no rodapé do site
+# Para os botões de compartilhamento no final dos artigos, use o arquivo "social.yml"
+behance:
+bitbucket:
+calendly:
+dribbble:
+facebook:
+flickr:
+github: 
+gitlab:
+google-scholar:   # ex. "WXAAOb0AAAAJ"
+instagram:
+hacker-news:
+keybase:
+linkedin:
+mail:             # ex. "sam@mail.com"
+map:              # ex. "34.0886/-118.3191"
+mastodon:         # ex. "fostodon.org/@sam"
+matrix:           # ex. "@sam:matrix.org"
+medium:
+patreon:
+phone:            # ex. "+55 (11) 91111-1111"
+pinterest:
+reddit:
+soundcloud:
+sms:              # ex. "+55 (11) 91111-1111"
+stack-exchange:   # ex. "123456789"
+stack-overflow:   # ex. "123456789"
+steam:
+telegram:
+tumblr:
+twitch:
+twitter:
+vimeo:
+vk:
+wordpress:
+youtube:          # ex. "@Nescau"

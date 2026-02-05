@@ -1,0 +1,24 @@
+# Localization strings
+str_follow_on: "Seguir em"
+str_rss_follow: "Seguir feed RSS"
+str_share_on: "Compartilhar no"
+str_add_to: "Adicionar ao"
+str_email: "Email"
+str_tweet: "Tuítar"
+str_pin_it: "Fixar"
+str_next_post: "Próximo post"
+str_previous_post: "Post anterior"
+str_next_page: "Próxima página"
+str_previous_page: "Página anterior"
+str_javascript_required_disqus: "Por favor habilite o JavaScript para ver os comentários do Disqus."
+str_no_result_found: "Nenhum resultado encontrado"
+str_cookie_approve: "Aceitar"
+str_cookie_disclaimer: "Gostaríamos de usar cookies e scripts de terceiros para melhorar a funcionalidade deste site. Ao clicar em \"Aceitar\", você concorda com o uso de cookies e scripts conforme nossa política de privacidade."
+str_months: [Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+str_dark: 'Escuro'
+str_light: 'Claro'
+str_date_format: '%B %-d, %Y'
+str_last_modified: 'Última atualização em'
+
+# Localization settings
+cusdis_lang: pt-BR # zh-cn, es, tr, pt-BR
