@@ -1,5 +1,5 @@
 # To add links to the navigation bar.
-#- example:
+- example:
   title: Example
   url: https://example.com
   hide: true
